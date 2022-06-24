@@ -61,6 +61,7 @@ const chartData = [
 ]
 
 const option = {
+  animationDuration: 10000,
   title: {
     text: '各个学校分数线分布'
   },
