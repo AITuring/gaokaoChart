@@ -27,19 +27,20 @@ const chartData = [
     smooth: true,
     // stack: 'Total',
     data: [460, 445, 474, 476, 455],
-    areaStyle: {
-      opacity: 0.8,
-      color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [ //这里是渐变的角度，上下左右四个方向
-        {
-          offset: 0,
-          color: 'rgb(128, 255, 165)'//这里是渐变色的起始颜色
-        },
-        {
-          offset: 1,
-          color: 'rgb(1, 191, 236)'// 这里是渐变色的结束颜色
-        }
-      ])
-    },
+    // areaStyle: {
+    //   opacity: 0.8,
+    //   color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [ //这里是渐变的角度，上下左右四个方向
+    //     {
+    //       offset: 0,
+    //       color: 'rgb(128, 255, 165)'//这里是渐变色的起始颜色
+    //     },
+    //     {
+    //       offset: 1,
+    //       color: 'rgb(1, 191, 236)'// 这里是渐变色的结束颜色
+    //     }
+    //   ])
+    // },
+    areaStyle: {type: 'default',color:'#dcdfee'},
   },
   {
     name: '哈尔滨商业大学',
@@ -140,6 +141,33 @@ const chartData = [
     itemStyle:{color: handleColors()},
     // stack: 'Total',
     data: [470,474,498,501,482],
+  },
+  {
+    name: '甘肃中医药大学',
+    type: 'line',
+    smooth: true,
+    // areaStyle: {type: 'default',color:'#dcdfee'},
+    itemStyle:{color: handleColors()},
+    // stack: 'Total',
+    data: [502,497,516,515,485],
+  },
+  {
+    name: '长春大学',
+    type: 'line',
+    smooth: true,
+    // areaStyle: {type: 'default',color:'#dcdfee'},
+    itemStyle:{color: handleColors()},
+    // stack: 'Total',
+    data: [494,473,510,512,492],
+  },
+  {
+    name: '信阳农林学院',
+    type: 'line',
+    smooth: true,
+    // areaStyle: {type: 'default',color:'#dcdfee'},
+    itemStyle:{color: handleColors()},
+    // stack: 'Total',
+    data: [461,460,481,487,456],
   }
 ]
 
@@ -152,7 +180,7 @@ const option = {
     trigger: 'axis'
   },
   legend: {
-    data: ['二本线', '同位分','哈尔滨商业大学', '哈尔滨师范大学', '湖州师范学院', '辽宁科技大学','山西大同大学', '沈阳师范大学','景德镇陶瓷大学','邯郸学院','许昌学院','赣东学院','黑龙江工业学院','黄冈师范学院'],
+    data: ['二本线', '同位分','哈尔滨商业大学', '哈尔滨师范大学', '湖州师范学院', '辽宁科技大学','山西大同大学', '沈阳师范大学','景德镇陶瓷大学','邯郸学院','许昌学院','赣东学院','黑龙江工业学院','黄冈师范学院','甘肃中医药大学','长春大学','信阳农林学院'],
   },
   grid: {
     left: '3%',
